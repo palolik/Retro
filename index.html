@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Retro</title>
+</head>
+
+<body>
+  <!-- first section home page-->
+   <section class="h-screen ">
+    <div class="flex flex-row justify-between px-3 my-3 lg:px-20 lg:my-10">
+      <div class="text-3xl lg:text-6xl font-extrabold">ReTro</div>
+
+      <div class="hidden lg:flex flex-row items-center">
+        <button class="btn btn-circle mx-2" title="Home">
+          <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/7133/7133312.png" alt="">
+        </button>
+        <button class="btn btn-circle mx-2" title="sEdit">
+          <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/1250/1250615.png" alt="">
+        </button>
+        <button class="btn btn-circle mx-2" title="Users">
+          <img class="w-6 h-6" src="https://cdn.icon-icons.com/icons2/2098/PNG/512/user_plus_icon_128708.png" alt="">
+        </button>
+        <button class="btn btn-circle mx-2" title="Flags">
+          <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/157/157983.png" alt="">
+        </button>
+
+        <button class="btn rounded-full w-32 text-white bg-[#4000ff] hover:bg-blue-500">Sign in</button>
+
+      </div>
+      <div class="flex lg:hidden md:hidden">
+        <ul class="menu menu-horizontal px-1 ">
+
+          <li>
+            <details>
+              <summary class="lg:text-4xl text-xl md:text-4xl text-blue-400">
+                
+                  <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/7133/7133312.png" alt="">
+               
+              </summary>
+              <ul >
+                <li><button class="btn btn-circle " title="sad">
+                    <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/7133/7133312.png" alt="">
+                  </button></li>
+                <li>
+                  <button class="btn btn-circle" title="sad">
+                    <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/1250/1250615.png" alt="">
+                  </button>
+                </li>
+                <li>
+                  <button class="btn btn-circle " title="sad">
+                    <img class="w-6 h-6" src="https://cdn.icon-icons.com/icons2/2098/PNG/512/user_plus_icon_128708.png"
+                      alt="">
+                  </button>
+                </li>
+                <li>
+                  <button class="btn btn-circle" title="sad">
+                    <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/157/157983.png" alt="">
+                  </button>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div
+      class="bg-gray-900 bg-[url('assets/bgbanner.png')] bg-contain bg-bottom bg-no-repeat h-5/6  lg:h-[600px] m-4 lg:m-20 rounded-[30px] flex flex-col lg:flex-row py-4">
+      <div class="flex flex-col justify-center  text-white w-full lg:w-1/2 h-full p-4 lg:pl-20 ">
+        <div class="text-4xl lg:text-8xl font-bold mb-5">Welcome to the <span class="text-red-500"
+            style="background: -webkit-linear-gradient(#eee, #4000ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">ReTro</span>
+          Forum</div>
+        <div class="my-5">Share your favorite opinion and win and wp forum coffee mug!</div>
+        <div class="flex flex-row justify-center lg:justify-start"><label class="input input-bordered flex items-center pr-0 w-10/12 lg:w-1/2 rounded-full">
+            <input id="query" type="text" class="grow text-black" placeholder="Search" />
+            <button onclick="searchQuery()" class="btn rounded-full w-32 text-white bg-[#4000ff] hover:bg-blue-500">Search</button>
+          </label>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 flex flex-row justify-center items-center">
+        <div class="bg-white w-3/5  lg:w-1/2 h-min lg:text-2xl p-8 rounded-xl lg:rounded-3xl">
+          <div class="flex flex-row justify-between lg:my-5">
+            <p class="text-lg font-bold">Registered users</p>
+            <p>01</p>
+          </div>
+          <div class="flex flex-row justify-between my-5">
+            <p class="text-lg font-bold">Forum</p>
+            <p>10</p>
+          </div>
+          <div class="flex flex-row justify-between my-5">
+            <p class="text-lg font-bold">Topics</p>
+            <p>01</p>
+          </div>
+          <div class="flex flex-row justify-between my-5">
+            <p class="text-lg font-bold">Replies</p>
+            <p>01</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section> 
+   <section class="flex flex-col justify-center items-center ">
+    <div class="text-4xl lg:text-8xl font-bold text-center">Let's Discuss</div>
+    
+    <div class="lg:text-xl font-semibold mt-5 mb-10 w-3/4 lg:w-1/2 text-center" >Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</div>
+    <div class="flex flex-col lg:flex-row">
+      <div id="loading-spinner" class="text-center my-40 hidden">
+        <span class="loading loading-spinner text-primary loading-lg"></span>
+    </div>
+      <div id="post-container" class="mx-5"></div>
+      <div class="bg-slate-100 rounded-3xl lg:w-[400px] p-3 h-min mx-5 w-screen">
+        <div class="flex flex-row justify-between m-3"><p>Title</p><p class="flex flex-row items-center"><span><img class="h-5 w-5 mr-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Noun_Project_tick_icon_675776_cc.svg/2048px-Noun_Project_tick_icon_675776_cc.svg.png"></span>Mark as read (<span id="read-Cunter">0</span>)</p></div>
+        <div id="read-box" class="">
+    </div>
+      </div>
+    </div>
+  </section>  
+ <section class="h-screen lg:h-min">
+  <div class="bg-gray-900  bg-no-repeat h-5/6 lg:h-[600px] m-3 lg:m-20 rounded-[30px] flex flex-col lg:flex-row">
+    <div class="flex flex-col justify-center  text-white lg:w-1/2 h-full p-3 lg:pl-20">
+      <div class="text-4xl lg:text-8xl font-bold mb-5">Join Our Forum</div>
+  <div class="my-5">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </div>
+  <div>
+    <button class="btn rounded-full w-40 h-10 text-white bg-[#4000ff] hover:bg-blue-500 border-none">Registered Now</button>
+  </div>
+  
+  
+  </div>
+  <div class=" lg:w-1/2 flex flex-row justify-center items-center">
+    <img src="assets/joinforum.png" alt="">
+  </div>
+  
+  </div>
+ </section> 
+        <section class="flex flex-col justify-center items-center ">
+    <div class="text-4xl lg:text-8xl font-bold text-center ">Latest Posts</div>
+    <div class="text-lg lg:text-xl font-semibold mt-5 mb-10 w-3/4 lg:w-1/2 text-center" >Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</div>
+     <div id="latest-post-container"  class="flex flex-col lg:flex-row w-full  items-center lg:justify-evenly"> 
+   </div>
+    </section>  
+<footer class="footer footer-center p-10 bg-gray-100  mt-16">
+      
+        <div class="text-6xl font-bold ">ReTro</div>
+        <p class="font-medium">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC
+        </p> 
+        
+     
+     
+        <div class="grid grid-flow-col gap-4">
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+        </div>
+        <div class="border-t-2 w-full pt-5 ">
+          <p>Copyright © 2024 - All right reserved</p>
+        </div>
+      
+    </footer> 
+  <script src="script.js"></script>
+</body>
+
+</html>
